@@ -1,6 +1,6 @@
-# Fundamentos-flexbox  
+# Fundamentos Flexbox  
 
-## Repositório sobre os fundamentos do flexbox  
+### Repositório sobre os fundamentos do Flexbox  
 
 Este repositório tem por objetivo documentar o aprendizado sobre os fundamentos de Flexbox.
 
