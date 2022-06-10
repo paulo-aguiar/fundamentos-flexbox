@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - align items</title>
+  <style>
+    .container{
+      max-width: 350px;
+      border: 1px solid black;
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .item{
+      background-color: blueviolet;
+      margin: 5px;
+      color: white;
+      text-align: center;
+      flex: 1;
+    }
+
+    .center{
+      align-items: center;
+    }
+
+    .stretch{
+      align-items: stretch;
+    }
+
+    .flex-start{
+      align-items: flex-start;
+    }
+
+    .flex-end{
+      align-items: flex-end;
+    }
+    
+    .baseline{
+      align-items: baseline;
+    }
+
+    .column{
+      flex-direction: column;
+    }
+
+    .central{
+      height: 500px;
+      justify-content: center;
+    }
+
+    .central .item{
+      flex: 0;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>row</h1>
+  <p>center</p>
+  <section class="container center">
+    <div class="item">Item 1</div>
+    <div class="item">Lorem, ipsum dolor sit amet</div>
+    <div class="item">Item 3 mais alguma coisa</div>
+  </section>
+
+  <p>stretch</p> <!--todos os itens crescem de acordo com o maior conteúdo-->
+  <section class="container stretch">
+    <div class="item">Item 1</div>
+    <div class="item">Lorem, ipsum dolor sit amet</div>
+    <div class="item">Item 3 mais alguma coisa</div>
+  </section>
+
+  <p>flex-start</p>
+  <section class="container flex-start">
+    <div class="item">Item 1</div>
+    <div class="item">Lorem, ipsum dolor sit amet</div>
+    <div class="item">Item 3 mais alguma coisa</div>
+  </section>
+
+  <p>flex-end</p>
+  <section class="container flex-end">
+    <div class="item">Item 1</div>
+    <div class="item">Lorem, ipsum dolor sit amet</div>
+    <div class="item">Item 3 mais alguma coisa</div>
+  </section>
+
+  <p>baseline</p>
+  <section class="container baseline"> <!--todos os itens crescem de acordo com a linha base do texto/fonte-->
+    <div class="item"><br>Item 1</div>
+    <div class="item">Lorem, ipsum dolor sit amet</div>
+    <div class="item">Item 3 mais alguma coisa</div>
+  </section>
+
+  <h1>column</h1>
+  <p>flex-start (column)</p>
+  <section class="container flex-start column">
+    <div class="item">Item 1</div>
+    <div class="item">Lorem, ipsum dolor sit amet</div>
+    <div class="item">Item 3 mais alguma coisa</div>
+  </section>
+
+  <p>flex-end (column)</p>
+  <section class="container flex-end column">
+    <div class="item">Item 1</div>
+    <div class="item">Lorem, ipsum dolor sit amet</div>
+    <div class="item">Item 3 mais alguma coisa</div>
+  </section>
+
+  <p>center (column)</p>
+  <section class="container center column">
+    <div class="item">Item 1</div>
+    <div class="item">Lorem, ipsum dolor sit amet</div>
+    <div class="item">Item 3 mais alguma coisa</div>
+  </section>
+
+  <p>baseline (column)</p>
+  <section class="container baseline column"> <!--todos os itens crescem de acordo com a linha base do texto/fonte-->
+    <div class="item"><br>Item 1</div>
+    <div class="item">Lorem, ipsum dolor sit amet</div>
+    <div class="item">Item 3 mais alguma coisa</div>
+  </section>
+
+  <p>alinhamento centra à tela</p>
+  <section class="container central center">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Nam, repellendus exercitationem explicabo reiciendis 
+                      aut recusandae molestias debitis ea sed at eos qui voluptas.
+                      Libero culpa similique inventore accusantium illo nam.
+    </div>
+  </section>
+</body>
+</html>
